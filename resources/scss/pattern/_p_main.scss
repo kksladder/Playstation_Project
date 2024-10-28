@@ -1,0 +1,67 @@
+#header #logo a {
+    display: block;
+    width: 200px;
+    height: 35px;
+    background: url(../../../resources/images/logo.png) no-repeat 0 0 / contain;
+}
+#wrap {
+    background: black;
+}
+.intro {
+    color: white;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.sec-g__tit {
+    padding-bottom: 2.34375vw;
+    font-size: 8rem;
+    color: white;
+}
+
+.util,
+.all-menu,
+.search {
+    color: white;
+}
+.sec-game {
+    .title-area {
+        display: flex;
+        font-weight: 400;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list-game {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    li {
+        overflow: hidden;
+        padding: 20px;
+        border: 1px solid gray;
+        background: rgba(0, 0, 0, 1%);
+        border-radius: 20px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    img {
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+    }
+}
+
+.md-line,
+h5 {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
