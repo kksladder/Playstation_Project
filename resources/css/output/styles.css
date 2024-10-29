@@ -701,17 +701,41 @@ legend {
      object-fit: cover;
 }
 
-.md-line,
-h5 {
-  display: flex;
-  align-items: center;
+.txt,
+.how {
   color: white;
-  justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 5px;
+}
+
+.md-line {
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.how,
+.play {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 .how {
-  display: flex;
-  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.footer {
   color: white;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.company,
+a {
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
