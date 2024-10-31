@@ -2,8 +2,9 @@
     display: block;
     width: 200px;
     height: 35px;
-    background: url(../../../resources/images/logo.png) no-repeat 0 0 / contain;
+    background: url(../../../resources/images/logo.png);
 }
+
 #wrap {
     background: black;
 }
@@ -15,7 +16,7 @@
 }
 .sec-g__tit {
     padding-bottom: 2.34375vw;
-    font-size: 8rem;
+    font-size: 4.5rem;
     color: white;
 }
 
@@ -51,8 +52,52 @@
         object-fit: cover;
     }
 }
+// .game-image {
+//     left: 0;
+//     top: 0;
+//     width: 409px;
+//     height: 886px;
+//     object-fit: cover;
+//     transform: scale(1.05);
+//     transition: all ease 0.6s;
+// }
+.game-1 .wrap,
+> span {
+    position: relative;
+    border: 1px solid white;
+    opacity: 90%;
+    border-radius: 4px;
+    width: 367px;
+    height: 180px;
+    color: white;
+}
+.type > p {
+    display: block;
+    color: black;
+    margin-left: 10px;
+}
 
-.txt,
+.game-name .type .game-image {
+    width: 80%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.game-1 {
+    display: flex;
+    color: white;
+    gap: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
 .how {
     color: white;
     margin-top: 30px;
@@ -71,20 +116,36 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    padding-left: 10px;
-
-    margin-bottom: 10px;
 }
 .how {
     font-weight: bold;
     font-size: 50px;
 }
-.footer {
+.info-tit .info-tit2 {
     color: white;
-    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
 }
 
+.bacasime {
+    position: relative;
+    display: flex;
+    padding-top: 40px;
+    border-top: 1px solid #fff;
+}
+
+.layout-footer,
+.ft-tit,
 .company,
 a {
     color: white;
+}
+.ft-info ul li {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.company p {
+    display: flex;
+    justify-content: space-around;
 }
