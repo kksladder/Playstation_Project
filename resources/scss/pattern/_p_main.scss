@@ -1,29 +1,24 @@
-#header #logo a {
-    display: block;
-    width: 200px;
-    height: 35px;
-    background: url(../../../resources/images/logo.png) no-repeat 0 0 / contain;
-}
-#wrap {
-    background: black;
-}
 .intro {
-    color: white;
+    color: $white;
     font-weight: bold;
     margin-top: 150px;
     margin-left: 100px;
 }
+<<<<<<< HEAD
 .sec-g__tit {
     padding-bottom: 2.34375vw;
     font-size: 7rem;
     color: white;
 }
+=======
+>>>>>>> 20bcce554a26ec8c5530eee6d8c7522b70765fa8
 
-.util,
-.all-menu,
-.search {
-    color: white;
-}
+// .company p {
+//     display: flex;
+//     justify-content: space-around;
+// }
+
+////////////////////////////////////////////////
 .sec-game {
     .title-area {
         display: flex;
@@ -39,10 +34,10 @@
     li {
         overflow: hidden;
         padding: 20px;
-        border: 1px solid gray;
+        border: 1px solid $gray-40;
         background: rgba(0, 0, 0, 1%);
         border-radius: 20px;
-        color: white;
+        color: $white;
         margin-bottom: 20px;
     }
     img {
@@ -50,14 +45,48 @@
         height: 390px;
         object-fit: cover;
     }
+    .sec-g__tit {
+        padding-bottom: 2.34375vw;
+        font-size: 4.5rem;
+        color: $white;
+    }
+    .game-1 .wrap,
+    > span {
+        position: relative;
+        border: 1px solid $white;
+        opacity: 90%;
+        border-radius: 4px;
+        width: 367px;
+        height: 180px;
+        color: $white;
+    }
 }
+.game-name .type .game-image {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border: 1px solid $gray-40;
+    background-color: $white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    .type p {
+        display: block;
+        color: $black;
+        margin-left: 10px;
+    }
 
-.txt,
-.how {
-    color: white;
-    margin-top: 30px;
-    padding-left: 5px;
+    .wrap > .type,
+    > span {
+        display: flex;
+        justify-content: space-between;
+        border: 1.5px solid $white;
+        font-size: 1.6rem;
+        margin: 10px;
+    }
 }
+<<<<<<< HEAD
 .md-line {
     font-weight: bold;
     font-size: 50px;
@@ -108,4 +137,93 @@ li {
 a {
     display: flex;
     color: white;
+=======
+.game-1 {
+    position: relative;
+    display: flex;
+    color: $white;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-info {
+    .layout-footer,
+    .ft-tit,
+    .company,
+    a {
+        color: $white;
+    }
+    .info-cont {
+        color: $white;
+    }
+    .ft-info ul li {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    .info-tit .info-tit2 {
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+    }
+}
+
+.sec-game2 {
+    .wrap {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        height: 147px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        padding: 10px;
+        backdrop-filter: blur(5px);
+        .type {
+            display: flex;
+            gap: 10px;
+            span {
+                background: $black;
+                font-size: 1.2rem;
+                white-space: nowrap;
+                border-radius: 34px;
+                color: $white;
+                padding: 5px 15px;
+            }
+        }
+    }
+}
+
+.sec-how {
+    .how,
+    .play {
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    .how {
+        font-weight: bold;
+        font-size: 5rem;
+    }
+
+    .bacasime {
+        position: relative;
+        display: flex;
+        padding-top: 40px;
+        border-top: 1px solid $white;
+    }
+    .how {
+        color: $white;
+        margin-top: 30px;
+        padding-left: 5px;
+    }
+    .md-line {
+        font-weight: bold;
+        font-size: 5rem;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+>>>>>>> 20bcce554a26ec8c5530eee6d8c7522b70765fa8
 }
