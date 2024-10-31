@@ -15,7 +15,7 @@
 }
 .sec-g__tit {
     padding-bottom: 2.34375vw;
-    font-size: 8rem;
+    font-size: 7rem;
     color: white;
 }
 
@@ -77,14 +77,35 @@
 }
 .how {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 45px;
 }
 .footer {
     color: white;
     align-items: center;
 }
 
+.info-cont,
+li {
+    font-weight: bold;
+}
+
+.info,
+li {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.info-cont {
+    color: white;
+    font-size: 19px;
+}
+
+.footer {
+    display: flex;
+}
+
 .company,
 a {
+    display: flex;
     color: white;
 }

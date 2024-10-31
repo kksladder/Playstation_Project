@@ -664,7 +664,7 @@ legend {
 
 .sec-g__tit {
   padding-bottom: 2.34375vw;
-  font-size: 8rem;
+  font-size: 7rem;
   color: white;
 }
 
@@ -727,7 +727,7 @@ legend {
 
 .how {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .footer {
@@ -735,7 +735,28 @@ legend {
   align-items: center;
 }
 
+.info-cont,
+li {
+  font-weight: bold;
+}
+
+.info,
+li {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.info-cont {
+  color: white;
+  font-size: 19px;
+}
+
+.footer {
+  display: flex;
+}
+
 .company,
 a {
+  display: flex;
   color: white;
 }/*# sourceMappingURL=styles.css.map */
