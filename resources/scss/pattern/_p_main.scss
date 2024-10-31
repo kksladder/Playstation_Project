@@ -1,30 +1,16 @@
-#header #logo a {
-    display: block;
-    width: 200px;
-    height: 35px;
-    background: url(../../../resources/images/logo.png);
-}
-
-#wrap {
-    background: black;
-}
 .intro {
-    color: white;
+    color: $white;
     font-weight: bold;
     margin-top: 150px;
     margin-left: 100px;
 }
-.sec-g__tit {
-    padding-bottom: 2.34375vw;
-    font-size: 4.5rem;
-    color: white;
-}
 
-.util,
-.all-menu,
-.search {
-    color: white;
-}
+// .company p {
+//     display: flex;
+//     justify-content: space-around;
+// }
+
+////////////////////////////////////////////////
 .sec-game {
     .title-area {
         display: flex;
@@ -40,10 +26,10 @@
     li {
         overflow: hidden;
         padding: 20px;
-        border: 1px solid gray;
+        border: 1px solid $gray-40;
         background: rgba(0, 0, 0, 1%);
         border-radius: 20px;
-        color: white;
+        color: $white;
         margin-bottom: 20px;
     }
     img {
@@ -51,101 +37,132 @@
         height: 390px;
         object-fit: cover;
     }
+    .sec-g__tit {
+        padding-bottom: 2.34375vw;
+        font-size: 4.5rem;
+        color: $white;
+    }
+    .game-1 .wrap,
+    > span {
+        position: relative;
+        border: 1px solid $white;
+        opacity: 90%;
+        border-radius: 4px;
+        width: 367px;
+        height: 180px;
+        color: $white;
+    }
 }
-// .game-image {
-//     left: 0;
-//     top: 0;
-//     width: 409px;
-//     height: 886px;
-//     object-fit: cover;
-//     transform: scale(1.05);
-//     transition: all ease 0.6s;
-// }
-.game-1 .wrap,
-> span {
-    position: relative;
-    border: 1px solid white;
-    opacity: 90%;
-    border-radius: 4px;
-    width: 367px;
-    height: 180px;
-    color: white;
-}
-.type > p {
-    display: block;
-    color: black;
-    margin-left: 10px;
-}
-
 .game-name .type .game-image {
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     padding: 1.5rem;
-    border: 1px solid #ddd;
-    background-color: #fff;
+    border: 1px solid $gray-40;
+    background-color: $white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-}
+    .type p {
+        display: block;
+        color: $black;
+        margin-left: 10px;
+    }
 
+    .wrap > .type,
+    > span {
+        display: flex;
+        justify-content: space-between;
+        border: 1.5px solid $white;
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+}
 .game-1 {
+    position: relative;
     display: flex;
-    color: white;
+    color: $white;
     gap: 2rem;
-    padding: 2rem;
     flex-direction: column;
     align-items: center;
 }
 
-.how {
-    color: white;
-    margin-top: 30px;
-    padding-left: 5px;
-}
-.md-line {
-    font-weight: bold;
-    font-size: 50px;
-    padding-left: 15px;
-
-    margin-bottom: 10px;
-}
-.how,
-.play {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-}
-.how {
-    font-weight: bold;
-    font-size: 50px;
-}
-.info-tit .info-tit2 {
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
+.sec-info {
+    .layout-footer,
+    .ft-tit,
+    .company,
+    a {
+        color: $white;
+    }
+    .info-cont {
+        color: $white;
+    }
+    .ft-info ul li {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    .info-tit .info-tit2 {
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+    }
 }
 
-.bacasime {
-    position: relative;
-    display: flex;
-    padding-top: 40px;
-    border-top: 1px solid #fff;
+.sec-game2 {
+    .wrap {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        height: 147px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        padding: 10px;
+        backdrop-filter: blur(5px);
+        .type {
+            display: flex;
+            gap: 10px;
+            span {
+                background: $black;
+                font-size: 1.2rem;
+                white-space: nowrap;
+                border-radius: 34px;
+                color: $white;
+                padding: 5px 15px;
+            }
+        }
+    }
 }
 
-.layout-footer,
-.ft-tit,
-.company,
-a {
-    color: white;
-}
-.ft-info ul li {
-    color: white;
-    display: flex;
-    justify-content: space-around;
-}
-.company p {
-    display: flex;
-    justify-content: space-around;
+.sec-how {
+    .how,
+    .play {
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    .how {
+        font-weight: bold;
+        font-size: 5rem;
+    }
+
+    .bacasime {
+        position: relative;
+        display: flex;
+        padding-top: 40px;
+        border-top: 1px solid $white;
+    }
+    .how {
+        color: $white;
+        margin-top: 30px;
+        padding-left: 5px;
+    }
+    .md-line {
+        font-weight: bold;
+        font-size: 5rem;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
 }

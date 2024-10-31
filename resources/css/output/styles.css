@@ -39,6 +39,11 @@ img {
   border: 0 none;
 }
 
+img,
+video {
+  max-width: 100%;
+}
+
 dl,
 ul,
 ol,
@@ -377,6 +382,10 @@ legend {
   color: #1d1d1d;
 }
 
+#wrap {
+  background: black;
+}
+
 #header {
   position: relative;
   z-index: 1000;
@@ -421,9 +430,9 @@ legend {
 }
 #header #logo a {
   display: block;
-  width: 200px;
-  height: 35px;
-  background: url("../../../resources/images/pattern/common/head_logo.svg") no-repeat 0 0/contain;
+  width: 147px;
+  height: 39px;
+  background: url(../../../resources/images/logo.png) no-repeat 0 0;
 }
 #header #logo span {
   position: absolute !important;
@@ -435,6 +444,12 @@ legend {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+.util,
+.all-menu,
+.search {
+  color: #fff;
 }
 
 #gnb {
@@ -565,7 +580,7 @@ legend {
   top: 52px;
   left: 0;
   width: 90%;
-  border: 1px solid #c6c6c6;
+  border: 1px solid #ddd;
   background: #fff;
   text-align: center;
 }
@@ -574,7 +589,7 @@ legend {
   text-transform: uppercase;
 }
 .util .lang__lst li:first-child {
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #ddd;
 }
 .util .search {
   transform: scaleX(-1);
@@ -644,34 +659,11 @@ legend {
   border-radius: 50%;
 }
 
-#header #logo a {
-  display: block;
-  width: 200px;
-  height: 35px;
-  background: url(../../../resources/images/logo.png);
-}
-
-#wrap {
-  background: black;
-}
-
 .intro {
-  color: white;
+  color: #fff;
   font-weight: bold;
   margin-top: 150px;
   margin-left: 100px;
-}
-
-.sec-g__tit {
-  padding-bottom: 2.34375vw;
-  font-size: 4.5rem;
-  color: white;
-}
-
-.util,
-.all-menu,
-.search {
-  color: white;
 }
 
 .sec-game .title-area {
@@ -688,10 +680,10 @@ legend {
 .sec-game li {
   overflow: hidden;
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid #ddd;
   background: rgba(0, 0, 0, 0.01);
   border-radius: 20px;
-  color: white;
+  color: #fff;
   margin-bottom: 20px;
 }
 .sec-game img {
@@ -700,26 +692,24 @@ legend {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.game-1 .wrap,
-> span {
+.sec-game .sec-g__tit {
+  padding-bottom: 2.34375vw;
+  font-size: 4.5rem;
+  color: #fff;
+}
+.sec-game .game-1 .wrap,
+.sec-game > span {
   position: relative;
-  border: 1px solid white;
+  border: 1px solid #fff;
   opacity: 90%;
   border-radius: 4px;
   width: 367px;
   height: 180px;
-  color: white;
-}
-
-.type > p {
-  display: block;
-  color: black;
-  margin-left: 10px;
+  color: #fff;
 }
 
 .game-name .type .game-image {
-  width: 80%;
+  width: 100%;
   max-width: 500px;
   padding: 1.5rem;
   border: 1px solid #ddd;
@@ -729,69 +719,99 @@ legend {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+.game-name .type .game-image .type p {
+  display: block;
+  color: #000;
+  margin-left: 10px;
+}
+.game-name .type .game-image .wrap > .type,
+.game-name .type .game-image > span {
+  display: flex;
+  justify-content: space-between;
+  border: 1.5px solid #fff;
+  font-size: 1.6rem;
+  margin: 10px;
+}
 
 .game-1 {
+  position: relative;
   display: flex;
-  color: white;
+  color: #fff;
   gap: 2rem;
-  padding: 2rem;
   flex-direction: column;
   align-items: center;
 }
 
-.how {
-  color: white;
-  margin-top: 30px;
-  padding-left: 5px;
+.sec-info .layout-footer,
+.sec-info .ft-tit,
+.sec-info .company,
+.sec-info a {
+  color: #fff;
 }
-
-.md-line {
+.sec-info .info-cont {
+  color: #fff;
+}
+.sec-info .ft-info ul li {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.sec-info .info-tit .info-tit2 {
+  color: white;
   font-weight: bold;
   font-size: 50px;
-  padding-left: 15px;
-  margin-bottom: 10px;
 }
 
-.how,
-.play {
+.sec-game2 .wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 147px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.sec-game2 .wrap .type {
+  display: flex;
+  gap: 10px;
+}
+.sec-game2 .wrap .type span {
+  background: #000;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  border-radius: 34px;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.sec-how .how,
+.sec-how .play {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
-
-.how {
+.sec-how .how {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 5rem;
 }
-
-.info-tit .info-tit2 {
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.bacasime {
+.sec-how .bacasime {
   position: relative;
   display: flex;
   padding-top: 40px;
   border-top: 1px solid #fff;
 }
-
-.layout-footer,
-.ft-tit,
-.company,
-a {
-  color: white;
+.sec-how .how {
+  color: #fff;
+  margin-top: 30px;
+  padding-left: 5px;
 }
-
-.ft-info ul li {
-  color: white;
-  display: flex;
-  justify-content: space-around;
-}
-
-.company p {
-  display: flex;
-  justify-content: space-around;
+.sec-how .md-line {
+  font-weight: bold;
+  font-size: 5rem;
+  padding-left: 15px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */

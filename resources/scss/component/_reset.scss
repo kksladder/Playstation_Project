@@ -37,6 +37,11 @@ img {
     border: 0 none;
 }
 
+img,
+video {
+    max-width: 100%;
+}
+
 dl,
 ul,
 ol,
