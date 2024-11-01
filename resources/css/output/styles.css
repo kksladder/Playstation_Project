@@ -666,21 +666,25 @@ legend {
   margin-left: 100px;
 }
 
-<<<<<<< HEAD
-.sec-g__tit {
+.head .sec-g__tit {
   padding-bottom: 2.34375vw;
   font-size: 7rem;
   color: white;
 }
 
-.util,
-.all-menu,
-.search {
-  color: white;
+.sec-game2 .wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 147px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
-=======
->>>>>>> 20bcce554a26ec8c5530eee6d8c7522b70765fa8
 .sec-game .title-area {
   display: flex;
   font-weight: 400;
@@ -713,10 +717,10 @@ legend {
   color: #fff;
 }
 .sec-game .game-1 .wrap,
-.sec-game > span {
+.sec-game .game-1 > span {
   position: relative;
   border: 1px solid #fff;
-  opacity: 90%;
+  opacity: 0.9%;
   border-radius: 4px;
   width: 367px;
   height: 180px;
@@ -734,13 +738,15 @@ legend {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.game-name .type .game-image .type p {
+
+.type p {
   display: block;
   color: #000;
   margin-left: 10px;
 }
-.game-name .type .game-image .wrap > .type,
-.game-name .type .game-image > span {
+
+.wrap > .type,
+> span {
   display: flex;
   justify-content: space-between;
   border: 1.5px solid #fff;
@@ -748,7 +754,60 @@ legend {
   margin: 10px;
 }
 
-.game-1 {
+.md-line {
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.how,
+.play {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.how {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.footer {
+  color: white;
+  align-items: center;
+}
+
+.info-cont,
+li {
+  font-weight: bold;
+}
+
+.info,
+li {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.info-cont {
+  color: white;
+  font-size: 19px;
+}
+
+.footer {
+  display: flex;
+}
+
+.company,
+a {
+  display: flex;
+  color: white;
+}
+.company .game-1,
+a .game-1 {
   position: relative;
   display: flex;
   color: #fff;
@@ -777,23 +836,11 @@ legend {
   font-size: 50px;
 }
 
-.sec-game2 .wrap {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  height: 147px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  padding: 10px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-.sec-game2 .wrap .type {
+.type {
   display: flex;
   gap: 10px;
 }
-.sec-game2 .wrap .type span {
+.type span {
   background: #000;
   font-size: 1.2rem;
   white-space: nowrap;
@@ -811,11 +858,7 @@ legend {
 }
 .sec-how .how {
   font-weight: bold;
-<<<<<<< HEAD
-  font-size: 45px;
-=======
   font-size: 5rem;
->>>>>>> 20bcce554a26ec8c5530eee6d8c7522b70765fa8
 }
 .sec-how .bacasime {
   position: relative;
@@ -823,33 +866,6 @@ legend {
   padding-top: 40px;
   border-top: 1px solid #fff;
 }
-<<<<<<< HEAD
-
-.info-cont,
-li {
-  font-weight: bold;
-}
-
-.info,
-li {
-  color: white;
-  margin-bottom: 15px;
-}
-
-.info-cont {
-  color: white;
-  font-size: 19px;
-}
-
-.footer {
-  display: flex;
-}
-
-.company,
-a {
-  display: flex;
-  color: white;
-=======
 .sec-how .how {
   color: #fff;
   margin-top: 30px;
@@ -860,5 +876,4 @@ a {
   font-size: 5rem;
   padding-left: 15px;
   margin-bottom: 10px;
->>>>>>> 20bcce554a26ec8c5530eee6d8c7522b70765fa8
 }/*# sourceMappingURL=styles.css.map */

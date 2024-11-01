@@ -4,14 +4,11 @@
     margin-top: 150px;
     margin-left: 100px;
 }
-<<<<<<< HEAD
-.sec-g__tit {
+.head .sec-g__tit {
     padding-bottom: 2.34375vw;
     font-size: 7rem;
     color: white;
 }
-=======
->>>>>>> 20bcce554a26ec8c5530eee6d8c7522b70765fa8
 
 // .company p {
 //     display: flex;
@@ -19,6 +16,19 @@
 // }
 
 ////////////////////////////////////////////////
+.sec-game2 {
+    .wrap {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        height: 147px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        padding: 10px;
+        backdrop-filter: blur(5px);
+    }
+}
 .sec-game {
     .title-area {
         display: flex;
@@ -51,10 +61,10 @@
         color: $white;
     }
     .game-1 .wrap,
-    > span {
+    .game-1 > span {
         position: relative;
         border: 1px solid $white;
-        opacity: 90%;
+        opacity: 0.9%;
         border-radius: 4px;
         width: 367px;
         height: 180px;
@@ -71,22 +81,23 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-    .type p {
-        display: block;
-        color: $black;
-        margin-left: 10px;
-    }
-
-    .wrap > .type,
-    > span {
-        display: flex;
-        justify-content: space-between;
-        border: 1.5px solid $white;
-        font-size: 1.6rem;
-        margin: 10px;
-    }
 }
-<<<<<<< HEAD
+
+.type p {
+    display: block;
+    color: $black;
+    margin-left: 10px;
+}
+
+.wrap > .type,
+> span {
+    display: flex;
+    justify-content: space-between;
+    border: 1.5px solid $white;
+    font-size: 1.6rem;
+    margin: 10px;
+}
+
 .md-line {
     font-weight: bold;
     font-size: 50px;
@@ -137,16 +148,16 @@ li {
 a {
     display: flex;
     color: white;
-=======
-.game-1 {
-    position: relative;
-    display: flex;
-    color: $white;
-    gap: 2rem;
-    flex-direction: column;
-    align-items: center;
-}
 
+    .game-1 {
+        position: relative;
+        display: flex;
+        color: $white;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .sec-info {
     .layout-footer,
     .ft-tit,
@@ -169,29 +180,17 @@ a {
     }
 }
 
-.sec-game2 {
-    .wrap {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        height: 147px;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 10px;
-        padding: 10px;
-        backdrop-filter: blur(5px);
-        .type {
-            display: flex;
-            gap: 10px;
-            span {
-                background: $black;
-                font-size: 1.2rem;
-                white-space: nowrap;
-                border-radius: 34px;
-                color: $white;
-                padding: 5px 15px;
-            }
-        }
+.type {
+    display: flex;
+    gap: 10px;
+
+    span {
+        background: $black;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        border-radius: 34px;
+        color: $white;
+        padding: 5px 15px;
     }
 }
 
@@ -225,5 +224,4 @@ a {
         padding-left: 15px;
         margin-bottom: 10px;
     }
->>>>>>> 20bcce554a26ec8c5530eee6d8c7522b70765fa8
 }
