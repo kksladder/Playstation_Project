@@ -881,6 +881,10 @@ legend {
   text-transform: uppercase;
   font-weight: 600;
 }
+.sec-game2 .wrap .game-name .cost .price {
+  font-size: 3vw;
+  font-weight: 600;
+}
 
 .sec-how .how,
 .sec-how .play {
