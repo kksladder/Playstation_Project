@@ -666,25 +666,6 @@ legend {
   margin-left: 100px;
 }
 
-.head .sec-g__tit {
-  padding-bottom: 2.34375vw;
-  font-size: 7rem;
-  color: white;
-}
-
-.sec-game2 .wrap {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  height: 147px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  padding: 10px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-
 .sec-game .title-area {
   display: flex;
   font-weight: 400;
@@ -717,10 +698,10 @@ legend {
   color: #fff;
 }
 .sec-game .game-1 .wrap,
-.sec-game .game-1 > span {
+.sec-game > span {
   position: relative;
   border: 1px solid #fff;
-  opacity: 0.9%;
+  opacity: 90%;
   border-radius: 4px;
   width: 367px;
   height: 180px;
@@ -738,15 +719,13 @@ legend {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-.type p {
+.game-name .type .game-image .type p {
   display: block;
   color: #000;
   margin-left: 10px;
 }
-
-.wrap > .type,
-> span {
+.game-name .type .game-image .wrap > .type,
+.game-name .type .game-image > span {
   display: flex;
   justify-content: space-between;
   border: 1.5px solid #fff;
@@ -754,60 +733,7 @@ legend {
   margin: 10px;
 }
 
-.md-line {
-  font-weight: bold;
-  font-size: 50px;
-  padding-left: 15px;
-  margin-bottom: 10px;
-}
-
-.how,
-.play {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  padding-left: 10px;
-  margin-bottom: 10px;
-}
-
-.how {
-  font-weight: bold;
-  font-size: 45px;
-}
-
-.footer {
-  color: white;
-  align-items: center;
-}
-
-.info-cont,
-li {
-  font-weight: bold;
-}
-
-.info,
-li {
-  color: white;
-  margin-bottom: 15px;
-}
-
-.info-cont {
-  color: white;
-  font-size: 19px;
-}
-
-.footer {
-  display: flex;
-}
-
-.company,
-a {
-  display: flex;
-  color: white;
-}
-.company .game-1,
-a .game-1 {
+.game-1 {
   position: relative;
   display: flex;
   color: #fff;
@@ -836,11 +762,23 @@ a .game-1 {
   font-size: 50px;
 }
 
-.type {
+.sec-game2 .wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 147px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.sec-game2 .wrap .type {
   display: flex;
   gap: 10px;
 }
-.type span {
+.sec-game2 .wrap .type span {
   background: #000;
   font-size: 1.2rem;
   white-space: nowrap;
