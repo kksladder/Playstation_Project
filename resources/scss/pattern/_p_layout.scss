@@ -312,3 +312,36 @@
         }
     }
 }
+
+#footer {
+    .ft-tit {
+        color: $white;
+        font-weight: bold;
+        font-size: 5rem;
+        border-bottom: 1px solid $white;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .menu,
+    .company {
+        display: flex;
+        color: $white;
+        padding-bottom: 20px;
+        strong {
+            display: block;
+            width: 140px;
+        }
+        a {
+            color: $white;
+            display: flex;
+            vertical-align: top;
+            padding: 2px 0;
+        }
+        i {
+            transform: rotate(-45deg);
+            margin-left: 10px;
+            margin-bottom: -5px;
+            vertical-align: middle;
+        }
+    }
+}
