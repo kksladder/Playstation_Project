@@ -718,7 +718,7 @@ legend {
     justify-content: space-between;
   }
 }
-.sec-game .list-game p {
+.sec-game p {
   color: #8e8e8e;
 }
 .sec-game li {
@@ -755,13 +755,13 @@ legend {
 @media (min-width: 600px) {
   .sec-game .sec-g__tit {
     font-size: 6rem;
-    color: red;
+    color: white;
   }
 }
 @media (min-width: 1024px) {
   .sec-game .sec-g__tit {
     font-size: 7rem;
-    color: blue;
+    color: white;
   }
 }
 .sec-game .game-1 .wrap,
@@ -886,16 +886,33 @@ legend {
   font-weight: 600;
 }
 
-.sec-how .how,
+.sec-how .how {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.6rem;
+}
 .sec-how .play {
   color: #fff;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 3.6rem;
 }
 .sec-how .how {
   font-weight: bold;
   font-size: 5rem;
+}
+@media (min-width: 600px) {
+  .sec-how .how {
+    font-size: 6rem;
+    color: white;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-how .how {
+    font-size: 7rem;
+    color: white;
+  }
 }
 .sec-how .bacasime {
   position: relative;

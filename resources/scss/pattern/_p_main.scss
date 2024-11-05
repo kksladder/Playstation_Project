@@ -28,10 +28,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        p {
-            color: $gray-50;
-        }
     }
+    p {
+        color: $gray-50;
+    }
+
     li {
         overflow: hidden;
         padding: 20px;
@@ -60,11 +61,11 @@
         line-height: 1.1;
         @include mobileMore {
             font-size: 6rem;
-            color: red;
+            color: white;
         }
         @include tabletMore {
             font-size: 7rem;
-            color: blue;
+            color: white;
         }
     }
     .game-1 .wrap,
@@ -196,16 +197,30 @@
 }
 
 .sec-how {
-    .how,
+    .how {
+        color: $white;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.6rem;
+    }
+
     .play {
         color: $white;
         justify-content: center;
         align-items: center;
-        font-size: 1.6rem;
+        font-size: 3.6rem;
     }
     .how {
         font-weight: bold;
         font-size: 5rem;
+        @include mobileMore {
+            font-size: 6rem;
+            color: white;
+        }
+        @include tabletMore {
+            font-size: 7rem;
+            color: white;
+        }
     }
 
     .bacasime {

@@ -177,6 +177,7 @@
         padding: 0;
         background: $gray-5;
         transition: all 0.3s;
+
         &::after {
             content: '';
             position: absolute;
@@ -186,6 +187,7 @@
             height: 100%;
             background: $gray-20;
         }
+
         a {
             display: block;
             padding: 7px 0;
