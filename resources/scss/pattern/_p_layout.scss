@@ -124,6 +124,7 @@
                     }
                 }
             }
+
             &:first-child {
                 .gnb__depth2 {
                     &::before {
@@ -151,6 +152,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+
                     height: 100%;
                     &::after {
                         content: '';
@@ -177,6 +179,7 @@
         padding: 0;
         background: $gray-5;
         transition: all 0.3s;
+        color: white;
 
         &::after {
             content: '';
@@ -279,6 +282,10 @@
     &.active {
         display: block;
         left: 0;
+    }
+    span {
+        font-size: 3rem;
+        font-weight: bold;
     }
 }
 

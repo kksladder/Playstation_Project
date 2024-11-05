@@ -149,6 +149,7 @@ a:active, a:hover {
   a {
     color: #1d1d1d;
     text-decoration: none;
+    color: #fff;
   }
   a:active, a:hover {
     text-decoration: underline;
@@ -520,6 +521,7 @@ legend {
   padding: 0;
   background: #f8f8f8;
   transition: all 0.3s;
+  color: white;
 }
 #gnb .gnb__depth2::after {
   content: "";
@@ -622,6 +624,10 @@ legend {
 #nav-all.active {
   display: block;
   left: 0;
+}
+#nav-all span {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .sec-g {
