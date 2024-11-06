@@ -92,37 +92,6 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text], input[type=password], input[type=submit], input[type=search] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 0;
-}
-input:checked[type=checkbox] {
-  background-color: #e4e4e4;
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
-}
-
-button {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-  border-radius: 0;
-}
-
-input[type=button], input[type=submit], input[type=reset], input[type=file] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-  border-radius: 0;
-}
-input[type=search]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-          appearance: none;
-}
-
 /* 기본 폰트 설정 */
 /* mobile */
 html {
@@ -149,7 +118,7 @@ a:active, a:hover {
   a {
     color: #1d1d1d;
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
   a:active, a:hover {
     text-decoration: underline;
@@ -469,7 +438,7 @@ legend {
   position: relative;
 }
 #gnb .gnb__depth1 > li:hover > a > span {
-  color: #246beb;
+  color: #fff;
 }
 #gnb .gnb__depth1 > li:hover > a > span::after {
   width: 100%;
@@ -481,7 +450,10 @@ legend {
   left: 0;
   width: 1px;
   height: 100%;
-  background: #e4e4e4;
+  background: #fff;
+}
+#gnb .gnb__depth1 > li:first-child li {
+  color: black;
 }
 #gnb .gnb__depth1 > li > a {
   display: flex;
@@ -498,6 +470,7 @@ legend {
   position: relative;
   display: flex;
   align-items: center;
+  color: #fff;
   height: 100%;
 }
 #gnb .gnb__depth1 > li > a span::after {
@@ -521,7 +494,7 @@ legend {
   padding: 0;
   background: #f8f8f8;
   transition: all 0.3s;
-  color: white;
+  color: #fff;
 }
 #gnb .gnb__depth2::after {
   content: "";
@@ -611,7 +584,6 @@ legend {
 
 #nav-all {
   position: fixed;
-  top: 0;
   left: 100%;
   width: 100%;
   height: 100%;
@@ -626,8 +598,10 @@ legend {
   left: 0;
 }
 #nav-all span {
+  color: #000;
   font-size: 3rem;
   font-weight: bold;
+  gap: 10px;
 }
 
 .sec-g {

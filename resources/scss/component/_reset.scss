@@ -96,39 +96,39 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input {
-    &[type='text'],
-    &[type='password'],
-    &[type='submit'],
-    &[type='search'] {
-        appearance: none;
-        border-radius: 0;
-    }
+// input {
+//     &[type='text'],
+//     &[type='password'],
+//     &[type='submit'],
+//     &[type='search'] {
+//         appearance: none;
+//         border-radius: 0;
+//     }
 
-    &:checked[type='checkbox'] {
-        background-color: $gray-20;
-        appearance: checkbox;
-    }
-}
+//     &:checked[type='checkbox'] {
+//         background-color: $gray-20;
+//         appearance: checkbox;
+//     }
+// }
 
-button {
-    appearance: button;
-    border-radius: 0;
-}
+// button {
+//     appearance: button;
+//     border-radius: 0;
+// }
 
-input {
-    &[type='button'],
-    &[type='submit'],
-    &[type='reset'],
-    &[type='file'] {
-        appearance: button;
-        border-radius: 0;
-    }
+// input {
+//     &[type='button'],
+//     &[type='submit'],
+//     &[type='reset'],
+//     &[type='file'] {
+//         appearance: button;
+//         border-radius: 0;
+//     }
 
-    &[type='search']::-webkit-search-cancel-button {
-        appearance: none;
-    }
-}
+//     &[type='search']::-webkit-search-cancel-button {
+//         appearance: none;
+//     }
+// }
 
 /* 기본 폰트 설정 */
 /* mobile */
@@ -156,7 +156,7 @@ a {
     a {
         color: $font-color-base;
         text-decoration: none;
-        color: $white;
+        color: $black;
 
         &:active,
         &:hover {
