@@ -342,8 +342,9 @@
         display: flex;
         color: $white;
         padding-bottom: 20px;
+
         strong {
-            display: block;
+            display: flex;
             width: 140px;
         }
         a {
@@ -358,5 +359,25 @@
             margin-bottom: -5px;
             vertical-align: middle;
         }
+    }
+    .all-ft {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        @include tabletMore;
+        width: 100%;
+        margin-right: 100px;
+    }
+
+    .ft-company,
+    .last,
+    .copy {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        gap: 30px;
+        font-size: 20px;
     }
 }

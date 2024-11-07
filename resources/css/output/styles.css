@@ -88,7 +88,7 @@ table {
 }
 
 body {
-  -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: auto;
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
@@ -655,7 +655,7 @@ legend {
 }
 #footer .menu strong,
 #footer .company strong {
-  display: block;
+  display: flex;
   width: 140px;
 }
 #footer .menu a,
@@ -671,6 +671,24 @@ legend {
   margin-left: 10px;
   margin-bottom: -5px;
   vertical-align: middle;
+}
+#footer .all-ft {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 100%;
+  margin-right: 100px;
+}
+#footer .ft-company,
+#footer .last,
+#footer .copy {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  gap: 30px;
+  font-size: 20px;
 }
 
 .intro {
