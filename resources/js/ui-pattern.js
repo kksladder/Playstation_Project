@@ -25,16 +25,13 @@ $('.lang__btn').click(function () {
 $('.lang__lst li').click(function () {
     $('.lang__lst').hide();
 });
-
-gsap.registerPlugin(ScrollTrigger);
-
-var burger = $('.util .all-menu');
+var burger = $('.menu-trigger');
 
 burger.each(function (index) {
     var $this = $(this);
 
     $this.on('click', function (e) {
         e.preventDefault();
-        $(this).toggleClass('active-' + (index + 1));
+        $(this).toggleClass('active-' + (index + 7));
     });
 });
