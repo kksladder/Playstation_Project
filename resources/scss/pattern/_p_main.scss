@@ -19,9 +19,15 @@
         align-items: center;
     }
     .list-game {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+        @include mobileMore {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include tabletMore {
+            grid-template-columns: repeat(3, 1fr);
+        }
 
         @include mobileMore {
             flex-direction: row;
@@ -35,6 +41,7 @@
 
     li {
         overflow: hidden;
+        width: 100%;
         padding: 20px;
         background: rgba(18, 18, 18, 0.7);
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -42,9 +49,6 @@
         border-radius: 20px;
         color: $white;
         margin-bottom: 20px;
-        @include mobileMore {
-            width: calc(50% - 10px);
-        }
     }
     img {
         display: block;
@@ -56,17 +60,9 @@
     }
     .sec-g__tit {
         padding-bottom: 20px;
-        font-size: 4.5rem;
+        font-size: 7.5rem;
         color: $white;
         line-height: 1.1;
-        @include mobileMore {
-            font-size: 6rem;
-            color: white;
-        }
-        @include tabletMore {
-            font-size: 7rem;
-            color: white;
-        }
     }
     .game-1 .wrap,
     > span {
@@ -117,7 +113,7 @@
     .info-cont {
         margin-top: 20px;
         color: $white;
-        font-size: 5vw;
+        font-size: 2.8rem;
         line-height: 1.4;
     }
     .ft-info ul li {
@@ -128,7 +124,7 @@
     .info-tit .info-tit2 {
         color: white;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 70px;
     }
 }
 
@@ -142,9 +138,13 @@
 
         img {
             display: block;
+            width: 100%;
             height: 100vh;
             object-fit: cover;
         }
+    }
+    .game-image {
+        width: 100%;
     }
     .wrap {
         position: absolute;
@@ -153,7 +153,7 @@
         right: 10px;
         background: rgba(255, 255, 255, 0.7);
         border-radius: 10px;
-        padding: 10px;
+        padding: 5px 20px;
         backdrop-filter: blur(5px);
 
         .date {
@@ -183,12 +183,12 @@
                 flex-direction: column;
                 margin-bottom: 1px;
                 .title {
-                    font-size: 7vw;
+                    font-size: 4rem;
                     text-transform: uppercase;
                     font-weight: 600;
                 }
                 .price {
-                    font-size: 3vw;
+                    font-size: 2rem;
                     font-weight: 600;
                 }
             }
@@ -208,7 +208,7 @@
         color: $white;
         justify-content: center;
         align-items: center;
-        font-size: 3.6rem;
+        font-size: 2.8rem;
     }
     .how {
         font-weight: bold;
@@ -218,7 +218,7 @@
             color: white;
         }
         @include tabletMore {
-            font-size: 7rem;
+            font-size: 70px;
             color: white;
         }
     }
