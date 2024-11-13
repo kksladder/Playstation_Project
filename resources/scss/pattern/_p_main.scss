@@ -63,6 +63,9 @@
         font-size: 7.5rem;
         color: $white;
         line-height: 1.1;
+        @include mobile {
+            font-size: 4.5rem;
+        }
     }
     .game-1 .wrap,
     > span {
@@ -125,6 +128,9 @@
         color: white;
         font-weight: bold;
         font-size: 70px;
+        @include mobile {
+            font-size: 4.5rem;
+        }
     }
 }
 
@@ -213,6 +219,9 @@
     .how {
         font-weight: bold;
         font-size: 5rem;
+        @include mobile {
+            font-size: 4.5rem;
+        }
         @include mobileMore {
             font-size: 6rem;
             color: white;
@@ -232,6 +241,7 @@
     .how {
         color: $white;
         margin-top: 30px;
+        margin-bottom: 15px;
         padding-left: 5px;
     }
     .md-line {

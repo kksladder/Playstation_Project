@@ -163,6 +163,43 @@
             <!-- intro -->
 
             <main id="container">
+            
+
+                <div id="video-background">
+                    <iframe
+                        width="1260"
+                        height="700"
+                        src="https://www.youtube.com/embed/NULUo-7gNAI?autoplay=1&mute=1&loop=1&playlist=NULUo-7gNAI&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                
+                
+                
+                </div>
+                <script>
+                    // YouTube API 로드 후 호출되는 함수
+                    function onYouTubeIframeAPIReady() {
+                        new YT.Player('video-background', {
+                            videoId: 'F39bIffXVR4n1ycJ', // 여기 고정된 YouTube 영상 ID 사용
+                            playerVars: {
+                                autoplay: 1,
+                                mute: 1,
+                                loop: 1,
+                                playlist: 'F39bIffXVR4n1ycJ', // 반복 재생을 위한 ID 설정
+                            },
+                            events: {
+                                onReady: function (event) {
+                                    event.target.playVideo();
+                                },
+                            },
+                        });
+                    }
+                </script>
+
                 <!-- 스튜디오 섹션 -->
                 <section class="sec-g sec-game">
                     <div class="inner">
