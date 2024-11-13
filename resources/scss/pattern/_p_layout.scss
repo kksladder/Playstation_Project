@@ -357,7 +357,9 @@
         gap: 40px;
         color: $white;
         padding-bottom: 20px;
-
+        .menu-strong {
+            width: 100px;
+        }
         strong {
             display: flex;
         }
@@ -426,7 +428,7 @@
         padding-top: 4%;
         padding-bottom: 4%;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     @media screen and (max-width: 390px) {
         .menu1,
