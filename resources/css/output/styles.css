@@ -303,7 +303,6 @@ legend {
   width: 100%;
   max-width: 1340px;
   margin: 0 auto;
-  background: #000;
   padding: 0 20px;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -312,16 +311,53 @@ legend {
   }
 }
 
+/*YOUTUBE VIDEO*/
 .intro {
   height: 100vh;
 }
 
-#video-background {
+.youtube {
   position: fixed;
-  color: #fff;
-  width: 390px;
-  height: 844px;
+  height: 100vh;
+  height: 100%;
+  background-color: #333;
+  overflow: hidden;
 }
+.youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+.youtube .youtube__area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #skip-nav {
   position: fixed;
   top: 0;
@@ -394,6 +430,7 @@ legend {
   align-items: center;
   max-width: none;
   height: 73px;
+  background-color: black;
 }
 @media (min-width: 1024px) {
   #header .inner {
@@ -801,6 +838,50 @@ legend {
   justify-content: space-between;
   align-items: center;
 }
+.sec-game .sticky-container {
+  height: 600vh; /* 스크롤 영역 설정 */
+  position: relative;
+}
+.sec-game .game-list {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.sec-game .game-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.sec-game .game-1.active {
+  opacity: 1;
+}
+.sec-game .game-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+.sec-game .game-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sec-game .wrap {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+  z-index: 10;
+}
 .sec-game .list-game {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -1039,4 +1120,29 @@ legend {
   font-size: 5rem;
   padding-left: 15px;
   margin-bottom: 10px;
+}
+
+.box {
+  position: absolute;
+  position: relative;
+  top: -70px;
+  animation-name: main-marquee-ani;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  white-space: nowrap;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  transform: translateY(0); /* 이 줄을 추가합니다 */
+}
+
+@keyframes main-marquee-ani {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=styles.css.map */
