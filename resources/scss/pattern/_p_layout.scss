@@ -6,12 +6,18 @@
     width: 100%;
     max-width: $grid;
     margin: 0 auto;
+    background: #000;
     padding: 0 $p-mobile;
     @include tablet {
         padding: 0 $p-tablet;
     }
 }
+
+.intro {
+    height: 100vh;
+}
 #video-background {
+    position: fixed;
     color: $white;
     @include mobileMore;
     width: 390px;
@@ -319,6 +325,7 @@
 .sec-g {
     overflow: hidden;
     padding: 10vw 0;
+    background: #000;
     &__tit {
         padding-bottom: 2.34375vw;
         font-size: 3rem;
