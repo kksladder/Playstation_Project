@@ -302,22 +302,37 @@
         margin-bottom: 10px;
     }
 }
-.box {
-    position: absolute;
-    position: relative;
-    top: -70px;
-    animation-name: main-marquee-ani;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
-
-    animation-direction: normal;
-    animation-timing-function: linear;
-    white-space: nowrap;
-    font-size: 25px;
-    font-weight: 500;
+.enjoy {
     color: $white;
-    transform: translateY(0); /* 이 줄을 추가합니다 */
+    font-weight: 500;
+    @include mobile {
+        font-size: 4.5rem;
+    }
+    @include mobileMore {
+        font-size: 6rem;
+        color: white;
+    }
+    @include tabletMore {
+        font-size: 70px;
+        color: white;
+    }
 }
+// .box {
+//     position: absolute;
+//     position: relative;
+//     top: -70px;
+//     animation-name: main-marquee-ani;
+//     animation-iteration-count: infinite;
+//     animation-duration: 7s;
+
+//     animation-direction: normal;
+//     animation-timing-function: linear;
+//     white-space: nowrap;
+//     font-size: 25px;
+//     font-weight: 500;
+//     color: $white;
+//     transform: translateY(0); /* 이 줄을 추가합니다 */
+// }
 
 // @keyframes main-marquee-ani {
 //     0% {
