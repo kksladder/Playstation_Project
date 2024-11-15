@@ -944,6 +944,18 @@ legend {
     font-size: 4.5rem;
   }
 }
+@media (max-width: 599px) and (min-width: 600px) {
+  .sec-game .sec-g__tit {
+    font-size: 6rem;
+    color: white;
+  }
+}
+@media (max-width: 599px) and (min-width: 1024px) {
+  .sec-game .sec-g__tit {
+    font-size: 7rem;
+    color: white;
+  }
+}
 .sec-game .game-1 .wrap,
 .sec-game > span {
   position: relative;
@@ -1006,6 +1018,18 @@ legend {
 @media (max-width: 599px) {
   .sec-info .info-tit .info-tit2 {
     font-size: 4.5rem;
+  }
+}
+@media (max-width: 599px) and (min-width: 600px) {
+  .sec-info .info-tit .info-tit2 {
+    font-size: 6rem;
+    color: white;
+  }
+}
+@media (max-width: 599px) and (min-width: 1024px) {
+  .sec-info .info-tit .info-tit2 {
+    font-size: 7rem;
+    color: white;
   }
 }
 
@@ -1130,21 +1154,7 @@ legend {
 .enjoy {
   color: #fff;
   font-weight: 500;
-}
-@media (max-width: 599px) {
-  .enjoy {
-    font-size: 4.5rem;
-  }
-}
-@media (min-width: 600px) {
-  .enjoy {
-    font-size: 6rem;
-    color: white;
-  }
-}
-@media (min-width: 1024px) {
-  .enjoy {
-    font-size: 70px;
-    color: white;
-  }
+  font-size: 2.8rem;
+  margin-top: -30px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=styles.css.map */
