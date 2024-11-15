@@ -12,6 +12,8 @@
 
 ////////////////////////////////////////////////
 .sec-game {
+    background-image: linear-gradient(red, yellow);
+
     .title-area {
         display: flex;
         font-weight: 400;
@@ -317,11 +319,11 @@
     transform: translateY(0); /* 이 줄을 추가합니다 */
 }
 
-@keyframes main-marquee-ani {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+// @keyframes main-marquee-ani {
+//     0% {
+//         transform: translateX(0);
+//     }
+//     100% {
+//         transform: translateX(-100%);
+//     }
+// }

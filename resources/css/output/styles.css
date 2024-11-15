@@ -318,8 +318,10 @@ legend {
 
 .youtube {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 100vh;
-  height: 100%;
   background-color: #333;
   overflow: hidden;
 }
@@ -832,6 +834,9 @@ legend {
   margin-left: 100px;
 }
 
+.sec-game {
+  background-image: linear-gradient(red, yellow);
+}
 .sec-game .title-area {
   display: flex;
   font-weight: 400;
@@ -1136,13 +1141,4 @@ legend {
   font-weight: 500;
   color: #fff;
   transform: translateY(0); /* 이 줄을 추가합니다 */
-}
-
-@keyframes main-marquee-ani {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }/*# sourceMappingURL=styles.css.map */
