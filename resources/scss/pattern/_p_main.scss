@@ -4,32 +4,29 @@
     margin-top: 150px;
     margin-left: 100px;
 }
-
-// .company p {
-//     display: flex;
-//     justify-content: space-around;
-// }
+// .background-image: linear-gradient(red, yellow);
 
 ////////////////////////////////////////////////
-.sec-game {
-    background-image: linear-gradient(red, yellow);
 
+.sticky-box {
+    position: sticky;
+    top: 100px;
+    background: #fff;
+    padding: 50px 80px 60px;
+    margin-bottom: 35px;
+    color: #141212;
+    display: grid;
+    grid-template-columns: 60% auto;
+
+    filter: brightness(1);
+}
+
+.sec-game {
     .title-area {
         display: flex;
         font-weight: 400;
         justify-content: space-between;
         align-items: center;
-    }
-    .sticky-container {
-        height: 600vh; /* 스크롤 영역 설정 */
-        position: relative;
-    }
-
-    .game-list {
-        position: sticky;
-        top: 0;
-        height: 100vh;
-        overflow: hidden;
     }
 
     .game-1 {
