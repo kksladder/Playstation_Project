@@ -1,15 +1,45 @@
 // 사이트 레이아웃 관련 요소
 
 // grid layout
+.how1 {
+    color: $white;
+    font-weight: bold;
+    font-size: 4.5rem;
+    @include mobile {
+        font-size: 4.5rem;
+    }
+    @include mobileMore {
+        font-size: 6rem;
+    }
+    @include tabletMore {
+        font-size: 7rem;
+    }
+}
 .inner {
     position: relative;
     width: 100%;
     max-width: $grid;
     margin: 0 auto;
-    // background: #000;
+    color: white;
     padding: 0 $p-mobile;
     @include tablet {
         padding: 0 $p-tablet;
+    }
+    .enjoy {
+        color: white;
+
+        font-size: 2rem;
+        margin-top: -30px;
+        margin-bottom: 50px;
+
+        @include mobileMore {
+            font-size: 2.8rem;
+            color: white;
+        }
+        @include tabletMore {
+            font-size: 3rem;
+            color: white;
+        }
     }
 }
 

@@ -170,6 +170,12 @@
         color: $white;
         font-size: 2.8rem;
         line-height: 1.4;
+        @include mobile {
+            font-size: 2rem;
+        }
+        @include tabletMore {
+            font-size: 3rem;
+        }
     }
     .ft-info ul li {
         color: white;
@@ -258,7 +264,7 @@
                 }
                 @include mobileMore {
                     font-size: 2.5rem;
-                    color: white;
+                    color: $black;
                     .price {
                         font-size: 2rem;
                         font-weight: 600;
@@ -273,7 +279,7 @@
             color: $white;
             justify-content: center;
             align-items: center;
-            font-size: 3.6rem;
+            font-size: 4.5rem;
         }
 
         .play {
@@ -287,6 +293,7 @@
             font-size: 5rem;
             @include mobile {
                 font-size: 4.5rem;
+                color: white;
             }
             @include mobileMore {
                 font-size: 6rem;
@@ -315,23 +322,6 @@
             font-size: 5rem;
             padding-left: 15px;
             margin-bottom: 10px;
-        }
-    }
-
-    .enjoy {
-        color: $white;
-        font-weight: 500;
-        font-size: 2.2rem;
-        margin-top: -30px;
-        margin-bottom: 50px;
-
-        @include mobileMore {
-            font-size: 4.3rem;
-            color: white;
-        }
-        @include tabletMore {
-            font-size: 4.5rem;
-            color: white;
         }
     }
 }
